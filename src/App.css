@@ -12,7 +12,7 @@ header {
   display: flex;
   align-items: center;
   background: #6441A5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(42, 8, 69), #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -28,6 +28,18 @@ header > p {
   margin-left: 60px;
 }
 
+.download-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: #6441A5;
+}
+
 .meme {
   position: relative;
   width: 90%;
@@ -35,8 +47,13 @@ header > p {
 }
 
 .meme > img {
+  display: block;
+  margin: auto;
   height: 75%;
-  width: 100%;
+  width: 80%;
+  -webkit-box-shadow: 10px 10px 26px -6px rgba(97,75,97,1);
+  -moz-box-shadow: 10px 10px 26px -6px rgba(97,75,97,1);
+  box-shadow: 10px 10px 26px -6px rgba(97,75,97,1);
 }
 
 .meme > h2 {
