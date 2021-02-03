@@ -1,7 +1,7 @@
 import React from 'react'
 import saveAs  from 'file-saver';
 import dometoimage from 'dom-to-image';
-import Draggable from 'react-draggable';
+// import Draggable from 'react-draggable';
 
 
 class MemeGenerator extends React.Component {
@@ -43,7 +43,7 @@ class MemeGenerator extends React.Component {
     handleImageDownload = () => {
             dometoimage.toBlob(document.getElementById("meme-image"))
                 .then(blob => {
-                    window.saveAs(blob, 'meme-name.png');
+                    saveAs(blob, 'meme-name.png');
                 })
         }
     
@@ -70,12 +70,12 @@ class MemeGenerator extends React.Component {
 
                 <div id="meme-image" className="meme">
                     <img src={this.state.randomImage} alt="Broken?"/>
-                        <Draggable>
+                        {/* <Draggable> */}
                             <h2 className="top">{this.state.topText}</h2>
-                        </Draggable>   
-                        <Draggable>
+                        {/* </Draggable>    */}
+                        {/* <Draggable> */}
                         <h2 className="bottom">{this.state.bottomText}</h2> 
-                        </Draggable>   
+                        {/* </Draggable>    */}
                 </div>
 
                 <button className="download-button" onClick={this.handleImageDownload}>Download Meme</button>
