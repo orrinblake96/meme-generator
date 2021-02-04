@@ -1,7 +1,16 @@
-## How To Try It Out
+# Memeulator 2000 - The Meme Generator
 
-Download or clone the repo then in the project directory, run:
+![](src/ReadmeImages/memeulator-image.png)
 
-### `npm start`
+## Website Link
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://memeulator2000.netlify.app/
+
+### Current Functionality
+- Pick text to be placed at the top & bottom.
+- Clicken "Gen" to have a random meme image displayed with your text.
+- Download your Meme Masterpiece when you are ready.
+
+### Future Functionality
+- Text will be draggable so users can chose where to place it on the image.
+- Users will be able to add as many text boxes as needed to make their Meme Masterpiece.
